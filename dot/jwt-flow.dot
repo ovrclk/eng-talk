@@ -14,7 +14,7 @@ digraph G {
   }
 
   n_tenant[label="Tenant"];
-  n_provider[label="Provider"];
+  n_provider[label="Log API"];
   {
     rank=same;
     rankdir=LR;

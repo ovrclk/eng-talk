@@ -62,7 +62,7 @@ digraph G {
     n_tenant -> n_manifest -> n_provider1 [label="mTLS"];
   }
 
-  n_provider1 -> n_cert:c1 [style=dashed label=""];
-  n_tenant    -> n_cert:c2 [style=dashed label=""];
+  n_provider1 -> n_cert:c1 [style=dashed label="" style=invis];
+  n_tenant    -> n_cert:c2 [style=dashed label="" style=invis];
 
 }

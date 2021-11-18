@@ -99,11 +99,6 @@
 <text text-anchor="middle" x="184" y="-208.3" font-family="Times,serif" font-size="14.00">Tenant</text>
 </g>
 <!-- n_tenant&#45;&gt;n_cert -->
-<g id="edge6" class="edge">
-<title>n_tenant&#45;&gt;n_cert:c2</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M207.93,-197.07C253.15,-170.64 346.97,-115.21 351,-108 370.06,-73.85 378.32,-47.98 351,-20 341.01,-9.77 321.7,-3.67 313.19,-9.76"/>
-<polygon fill="black" stroke="black" points="309.95,-8.45 309,-19 316.32,-11.34 309.95,-8.45"/>
-</g>
 <!-- n_tenant&#45;&gt;n_manifest -->
 <g id="edge3" class="edge">
 <title>n_tenant&#45;&gt;n_manifest</title>
@@ -112,10 +107,5 @@
 <text text-anchor="middle" x="255.87" y="-218.8" font-family="Times,serif" font-size="14.00">mTLS</text>
 </g>
 <!-- n_provider1&#45;&gt;n_cert -->
-<g id="edge5" class="edge">
-<title>n_provider1&#45;&gt;n_cert:c1</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M529.37,-194.18C505.41,-154.66 438.89,-58.69 354.15,-51.44"/>
-<polygon fill="black" stroke="black" points="354.14,-47.93 344,-51 353.84,-54.93 354.14,-47.93"/>
-</g>
 </g>
 </svg>

@@ -71,11 +71,29 @@ backgroundColor: #EDEDED
 - **The Platform**: hosting, management.
 
 ---
+## The Network
+Resource Acquisition
 
+![height:8em](img/marketplace-flow-1.svg)
+
+---
+## The Network
+Resource Acquisition
+
+![height:8em](img/marketplace-flow-2.svg)
+
+---
 ## The Network
 Resource Acquisition
 
 ![height:8em](img/marketplace-flow.svg)
+
+---
+
+## The Platform
+Workload Distribution
+
+![height:8em](img/platform-flow-1.svg)
 
 ---
 
@@ -94,7 +112,7 @@ Workload Distribution
 
 ## Awesome-Akash
 
-Community-driven deployment examples
+Community-sourced deployment examples
 
 ![height:8em](img/awesome-akash.png)
 
@@ -125,7 +143,7 @@ Generic SDK node hosting infrastructure.
 
 ## Cosmos-Omnibus
 
-![width:16em](img/cosmos-omnibus.png)
+![height:10em](img/cosmos-omnibus.png)
 
 ---
 
@@ -133,11 +151,19 @@ Generic SDK node hosting infrastructure.
 
 - Free trials (Authz)
 - JWT Authentication
-- Relayers
-- State-Sync
+- Cosmos-omnibus: relayer fleet
+- Cosmos-omnibus: state-sync fleet
 - Auditor network
 - More resources: IP address, GPU, storage, etc...
 - New CLI
+
+---
+
+## JWT Authentication
+
+Bootstrap traditional authentication from on-chain mTLS certs.
+
+![height:8em](img/jwt-flow.svg)
 
 ---
 
