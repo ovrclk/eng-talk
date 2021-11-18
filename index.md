@@ -121,11 +121,16 @@ Community-sourced deployment examples
 ## Awesome-Akash
 
 - 80+ applications
-- Databases, games, blogging platforms, crypto wallets, etc...
+- Databases, games, blogging platforms, crypto wallets, DEX frontends, etc...
+- Ready-to-deploy configurations
 
 ---
 
 ## Mining: pkt.cash
+
+* Akash resources can have a broad spectrum of uptime duration, quality.
+* The lower end of this spectrum represents a large amount of resources available to miners.
+* Also applicable to other state-less applications (CI, machine learning, finding E.T.)
 
 ---
 
@@ -153,7 +158,7 @@ Generic SDK node hosting infrastructure.
 - JWT Authentication
 - Cosmos-omnibus: relayer fleet
 - Cosmos-omnibus: state-sync fleet
-- Auditor network
+- Bootstrap auditor ecosystem
 - More resources: IP address, GPU, storage, etc...
 - New CLI
 
@@ -167,6 +172,17 @@ Bootstrap traditional authentication from on-chain mTLS certs.
 
 ---
 
+## Auditor Ecosystem
+
+> I only want bids from providers that _chiahaus_ says has premium-tier mining performnce.
+
+* :thumbsup: This has been supported since launch.
+* :unamused: The Akash team is essentially the only auditor at this time.
+* Community grants is funding development of an open-source template.
+* Essential for increasing and decentralizing provider supply.
+
+---
+
 ## Challenges
 
 * Query performance.
@@ -177,4 +193,11 @@ Bootstrap traditional authentication from on-chain mTLS certs.
 
 ---
 
-## Questions
+## Questions?
+
+Thanks for your time!
+
+- https://akash.network
+- https://github.com/ovrclk/akash
+- https://github.com/ovrclk/awesome-akash
+- https://github.com/ovrclk/cosmos-omnibus
