@@ -1,0 +1,31 @@
+digraph G {
+
+  rank1 [label="" width=0 style=invis];
+  rank2 [label="" width=0 style=invis];
+
+  rank1 -> rank2 [style=invis];
+
+
+  n_svc [label="Auth Service"];
+  {
+    rank=same;
+    rankdir=LR;
+    rank1 -> n_svc [style=invis];
+  }
+
+  n_tenant[label="Tenant"];
+  n_provider[label="Provider"];
+  {
+    rank=same;
+    rankdir=LR;
+    rank2 -> n_tenant -> n_provider [style=invis];
+  }
+
+  n_tenant -> n_svc [label="1. mTLS"];
+  n_svc -> n_tenant [label="2. JWT"];
+  /* n_svc -> n_tenant [label="2. JWT" style=invis]; */
+
+  n_tenant -> n_provider[label="3. HTTPS (+JWT)"];
+  /* n_tenant -> n_provider[label="3. HTTPS (+JWT)" style=invis]; */
+
+}

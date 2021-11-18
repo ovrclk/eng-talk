@@ -2,7 +2,7 @@
 title: Akash: Past, Present, and Future
 theme: uncover
 class:
-footer: '![img](./img/powered-by.svg)'
+backgroundColor: #EDEDED
 ---
 
 <style>
@@ -26,11 +26,11 @@ footer: '![img](./img/powered-by.svg)'
 
 ---
 
-# DevOps: The Company Killer
+## DevOps: The Company Killer
 
 * Everyone wants global deployments.
 * Not everyone should should roll their own.
-* DevOps is draining companies dry.
+* DevOps is a huge distraction for companies trying to build actual products.
 
 ---
 
@@ -38,25 +38,26 @@ footer: '![img](./img/powered-by.svg)'
 
 * CDNs have been distributing assets globally for years.
 * Docker images look and smell like static assets.
-* "Dynamic Delivery Network" - how hard could it be?
+* "Dynamic Delivery Network" - **how hard could it be?**
 
 ---
 
-# Platform: First Pass
+## Platform: vCentralized
 
-* Flexible hosting: Cloud, On-Prem, Colo.
-* "Push to Deploy", logging, billing, etc.
-* Simple matter of signing on **thousands** of hosting providers.
-* _On second thought,_ let's make a marketplace...
-* Yeah, that's the ticket.
+* :white_check_mark:Flexible hosting: Cloud, On-Prem, Colo.
+* :white_check_mark: "Push to Deploy", logging, billing, etc.
+* :x: **Sign on thousands of hosting providers.**
+* :thinking: On second thought, what if it's a marketplace...
+* :sunglasses: ... _Yeah, that's the ticket._
 
 ---
 
-# Marketplace: DEX
+## Marketplace: vDEX
 
-- Transparent pricing (history).
+- Trustless (pros and cons).
+- Transparent pricing (with history).
 - Simple payments (in principle).
-- **UNSTOPPABLE** (fault-tolerant).
+- **UNSTOPPABLE**.
 
 ---
 
@@ -64,62 +65,90 @@ footer: '![img](./img/powered-by.svg)'
 
 ---
 
-# The Akash Cloud
+## The Akash Cloud
 
 - **The Network**: marketplace, payments.
 - **The Platform**: hosting, management.
 
 ---
 
-# The Network: Resource Acquisition
+## The Network
+Resource Acquisition
 
-Reverse auction.
-
----
-
-# The Platform: Workload Distribution
-
-* Workload distribution.
-* Reverse auction
+![height:8em](img/marketplace-flow.svg)
 
 ---
 
-# Current Usage
----
+## The Platform
+Workload Distribution
 
-# Awesome-Akash
-
----
-
-# Mining: pkt.cash
+![height:8em](img/platform-flow.svg)
 
 ---
 
-# Cosmos-Omnibus
+## Eight Months In
 
-* Snapshots
+![height:10em](img/usage-akash.png)
 
 ---
 
-# Future Work
+## Awesome-Akash
 
-- More resources: IP address, GPU, storage, etc...
+Community-driven deployment examples
+
+![height:8em](img/awesome-akash.png)
+
+---
+
+## Awesome-Akash
+
+- 80+ applications
+- Databases, games, blogging platforms, crypto wallets, etc...
+
+---
+
+## Mining: pkt.cash
+
+---
+
+## Cosmos-Omnibus
+
+Generic SDK node hosting infrastructure.
+
+- Publish docker images.
+- Multiple bootstrap options:
+  - snapshot
+  - state-sync
+- **New: publish daily snapshots.**
+
+---
+
+## Cosmos-Omnibus
+
+![width:16em](img/cosmos-omnibus.png)
+
+---
+
+## Coming Soon
+
 - Free trials (Authz)
 - JWT Authentication
 - Relayers
 - State-Sync
 - Auditor network
+- More resources: IP address, GPU, storage, etc...
+- New CLI
 
 ---
 
-# Challenges
+## Challenges
 
-* Query performance
-* Database performance
-* Database size
-* Reliable event stream
-* Reliable state-sync
+* Query performance.
+* Reliable event stream.
+* Database performance.
+* Database size.
+* Reliable state-sync.
 
 ---
 
-# Questions
+## Questions

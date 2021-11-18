@@ -1,0 +1,30 @@
+digraph G {
+
+  rankdir=LR;
+
+  subgraph cluster_N {
+    label="Network";
+    graph[style=dotted];
+
+    node[shape=record];
+    n_order [label="{ Order | { { CPU | Memory } | { 0.5 | 4Gi } } }"];
+    n_bid1 [label="{ Bid | { { Price } | 4uakt } }"];
+    n_bid2 [label="{ Bid | { { Price } | 2uakt } }"];
+    n_lease [label="{ Lease }"];
+    
+    n_bid1  -> n_order;
+    n_bid2  -> n_order;
+    n_lease -> n_bid2;
+  }
+
+  n_tenant    [label="Tenant"];
+  n_provider1 [label="Provider 1"];
+  n_provider2 [label="Provider 2"];
+
+  edge[style=dashed];
+
+  n_tenant -> n_order;
+  n_provider1 -> n_bid1;
+  n_provider2 -> n_bid2;
+  n_tenant -> n_lease;
+}

@@ -1,0 +1,68 @@
+digraph G {
+
+  subgraph cluster_N {
+    label="Network";
+    graph[style=dotted];
+
+    node[shape=plaintext];
+    n_lease [label=<
+      <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> <TR>
+        <TD COLSPAN="2">Lease</TD>
+      </TR><TR>
+        <TD>Owner</TD><TD PORT="l1">akash1a</TD>
+      </TR><TR>
+        <TD>Provider</TD><TD PORT="l2">akash1b</TD>
+      </TR></TABLE>
+    >];
+    n_cert [label=<
+      <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> <TR>
+        <TD COLSPAN="2">Certificates</TD>
+      </TR><TR>
+        <TD>Owner</TD><TD>Provider</TD>
+      </TR><TR>
+        <TD PORT="o1">akash1a</TD><TD PORT="c1">xyz</TD>
+      </TR><TR>
+        <TD PORT="o2">akash1b</TD><TD PORT="c2">abc</TD>
+      </TR></TABLE>
+    >];
+
+    n_lease:l1 -> n_cert:o1;
+    n_lease:l2 -> n_cert:o2;
+
+    {
+      rank=same;
+      n_cert n_lease
+    }
+  }
+
+  subgraph cluster_X {
+    style=invis;
+
+    n_manifest[shape=plaintext label=<
+      <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> <TR>
+        <TD COLSPAN="2">Manifest</TD>
+      </TR><TR>
+        <TD>Image</TD><TD>foo:1.1</TD>
+      </TR><TR>
+        <TD>Host</TD><TD>foo.com</TD>
+      </TR><TR>
+        <TD>Cmd</TD><TD>./foo start</TD>
+      </TR></TABLE>
+     >];
+
+
+    n_tenant    [label="Tenant"];
+    n_provider1 [label="Provider"];
+
+    {
+      rank=min;
+      n_manifest n_tenant n_provider1
+    }
+
+    n_tenant -> n_manifest -> n_provider1 [label="mTLS"];
+  }
+
+  n_provider1 -> n_cert:c1 [style=dashed label=""];
+  n_tenant    -> n_cert:c2 [style=dashed label=""];
+
+}
