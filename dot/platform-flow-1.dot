@@ -18,7 +18,7 @@ digraph G {
       <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0"> <TR>
         <TD COLSPAN="2">Certificates</TD>
       </TR><TR>
-        <TD>Tenant</TD><TD>Provider</TD>
+        <TD>Owner</TD><TD>Cert</TD>
       </TR><TR>
         <TD PORT="o1">akash1a</TD><TD PORT="c1">xyz</TD>
       </TR><TR>
