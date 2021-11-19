@@ -1,7 +1,7 @@
 version: "2.0"
 services:
   web:
-    image: ghcr.io/ovrclk/eng-talk:v0.0.1
+    image: ghcr.io/ovrclk/eng-talk:v0.0.2
     expose:
       - port: 80
         as: 80
