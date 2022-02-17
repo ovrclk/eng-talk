@@ -104,7 +104,7 @@ Workload Distribution
 
 ---
 
-## Eight Months In
+## Ten Months In
 
 ![height:10em](img/usage-akash.png)
 
@@ -174,7 +174,7 @@ Bootstrap traditional authentication from on-chain mTLS certs.
 
 ## Auditor Ecosystem
 
-> I only want bids from providers that _chiahaus_ says has premium-tier mining performnce.
+> I only want bids from providers that _chiahaus_ says has premium-tier mining performance.
 
 * :thumbsup: This has been supported since launch.
 * :unamused: The Akash team is essentially the only auditor at this time.
